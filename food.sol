@@ -1,6 +1,6 @@
-//1º Step: Solidity smart contract code
+// 1º Step: Solidity smart contract code
 
-pragma solidity ^0.5.0;
+pragma solidity ^0.8.7;
 
 contract SimpleSmartContract {
     address payable public sender;
@@ -8,9 +8,9 @@ contract SimpleSmartContract {
     uint public amount;
 
     constructor(address payable _receiver, uint _amount) public {
-        sender = msg.sender;
-        receiver = _receiver;
-        amount = _amount;
+    sender = payable(msg.sender);
+    receiver = _receiver;
+    amount = _amount;
     }
 
 
