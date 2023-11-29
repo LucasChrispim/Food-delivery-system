@@ -14,7 +14,7 @@ contract SimpleSmartContract {
     }
 
 
-# The sender can initiate the transfer by calling the transfer function and providing the correct amount.
+// The sender can initiate the transfer by calling the transfer function and providing the correct amount.
     function transfer() public payable {
         require(msg.sender == sender, "Only the sender can initiate the transfer.");
         require(msg.value == amount, "The amount to be transferred must match the agreed amount.");
