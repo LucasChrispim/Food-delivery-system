@@ -1,4 +1,4 @@
-// 1º Step: Solidity smart contract code
+// 1º Step: // SPDX-License-Identifier: UNLICENSED// 1º Step: Solidity smart contract code
 
 pragma solidity ^0.8.7;
 
@@ -7,10 +7,10 @@ contract SimpleSmartContract {
     address payable public receiver;
     uint public amount;
 
-    constructor(address payable _receiver, uint _amount) public {
-    sender = payable(msg.sender);
-    receiver = _receiver;
-    amount = _amount;
+    constructor(address payable _receiver, uint _amount){
+        sender = payable(msg.sender);
+        receiver = _receiver;
+        amount = _amount;
     }
 
 
