@@ -1,4 +1,4 @@
-# 1º Step: Solidity smart contract code
+//1º Step: Solidity smart contract code
 
 pragma solidity ^0.5.0;
 
